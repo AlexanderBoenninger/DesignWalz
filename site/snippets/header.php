@@ -10,7 +10,6 @@
   <?= css('assets/css/styles.css') ?>
   <script src="assets/js/jquery-3.3.1.min.js"> </script>
   <script src="assets/js/rellax.min.js"> </script>
-
   <script src="assets/js/functions.js"> </script>
 
 </head>
