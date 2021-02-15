@@ -6,7 +6,7 @@
           <div class="button_2 button_size yellow">
             <p class="big_brot"> <?= $data->walzer_button()->ktr() ?></p>
           </div>
-          <div class="button_0 button_sized  click_react yellow">
+          <div class="button_0 button_sized click_react yellow">
           </div>
         </a>
         <p class="smal_brot join_host"> <?= $data->host()->ktr() ?></p>
@@ -14,7 +14,7 @@
           <div class="button_2 button_size yellow">
             <p class="big_brot"> <?= $data->host_button()->ktr() ?></p>
           </div>
-          <div class="button_1 button_sized  click_react yellow">
+          <div class="button_1 button_sized click_react yellow">
           </div>
         </a>
       </div>

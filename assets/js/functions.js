@@ -1,10 +1,14 @@
 $(document).ready(function() {
   const mq = window.matchMedia("(max-width:630px)");
   const mq_2 = window.matchMedia("(max-width:920px)");
-  var h = $(".button_size").height();
 
-   console.log(h + "height");
-  $('.button_sized').css("height", h , "px");
+
+let hArr = document.querySelectorAll(".button_size");
+let h2Arr = document.querySelectorAll(".button_sized");
+
+for(i=0; i< hArr.length; i++){
+  h2Arr[i].style.height = `${hArr[i].clientHeight}` + 'px';
+};
 
     $(".burger").click( function(){
         console.log("click");
