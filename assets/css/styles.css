@@ -299,7 +299,27 @@ margin-top: 12px;
   left: -18px;
 }
 
+/* .stack_5_r{
+  top: 30px;
+  left: 27px;
+z-index: -3;
+}
+.stack_4_r{
+  top: -13px;
+  left: -13px;
 
+} */
+
+.stack_3_r{
+  display: inline-block;
+  /* top: 10px; */
+  left: 13px;
+
+}
+
+.button_text{
+  padding: 0px 20px;
+}
 #survey{
   background-color: var(--blue_light);
 }

@@ -5,11 +5,23 @@ $(document).ready(function() {
 
 let hArr = document.querySelectorAll(".stack");
 let h2Arr = document.querySelectorAll(".stack_sized");
+let stackLayer = document.querySelectorAll(".stack_3_r");
 
 $( window ).on( "load", function() {
+
   for(i=0; i< hArr.length; i++){
-    h2Arr[i].style.height = `${hArr[i].clientHeight}` + 'px';
+    let h = hArr[i].clientHeight
+    h2Arr[i].style.height = h + 'px';
+
   };
+for(i=0; i< stackLayer.length; i++){
+  let posLayer = hArr[i].clientHeight*(-1)-10;
+  stackLayer[i].style.top = posLayer + 'px';
+};
+
+// $(".button").find(".stack_3_r").css('top', posLayer + 'px');
+// };
+
 });
     $(".burger").click( function(){
         console.log("click");

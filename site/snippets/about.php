@@ -11,6 +11,15 @@
              <img class="portrait" src="<?= $data->alex_pic()->url() ?>" alt="">
            </div>
            <div class="stack_2_r stack_sized white">
+
+             <!-- <div class="stack_2_r stack_5_r white">
+               <div class="stack_2_r stack_4_r white">
+                 <div class="stack_2_r stack_3_r white">
+                 </div>
+               </div>
+             </div> -->
+           </div>
+           <div class="stack_2_r stack_3_r stack_sized white">
            </div>
          </div>
          <p class="mittel_brot team_zitat_1"> <?= $data->alex_zitat()->ktr() ?></p>
