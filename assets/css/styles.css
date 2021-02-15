@@ -280,24 +280,25 @@ margin-top: 12px;
 .join_host, .join_walzer{
   grid-row: 1;
 }
-.button_2, .button_1, .button_0, .button_3, .button_4 {
-  border:3px solid black;
-  width: 100%
-}
-
-.button_1, .button_0, .button_3,  .button_4{
-  position: relative;
-  top: 10px;
-  left: 6px;
-}
-.button_0, .button_3{
-  left: -18px;
-}
-.button_2{
+.stack_1_layer{
   position: relative;
   z-index: 2;
   float: right;
 }
+.stack_1_layer, .stack_2_r, .stack_2_l{
+  border:3px solid black;
+  width: 100%
+}
+
+.stack_2_r, .stack_2_l{
+  position: relative;
+  top: 10px;
+  left: 6px;
+}
+.stack_2_l{
+  left: -18px;
+}
+
 
 #survey{
   background-color: var(--blue_light);
@@ -338,15 +339,6 @@ margin-top: 12px;
   margin-bottom: -5px;
 }
 
-.button_3, .button_4{
-  position: relative;
-  top: 14px;
-  left: 7px;
-  height: 312px;
-}
-.button_3{
-  left: -19px;
-}
 
 .team_zitat_1, .team_zitat_2{
   grid-column: 1/-1;
@@ -408,7 +400,7 @@ footer{
 .mittel_brot{
     font-size: 1em;
 }
-.button_1, .button_0, .button_3,  .button_4{
+.stack_2_r, .stack_2_l{
   height: inherit;
 }
 
@@ -427,7 +419,7 @@ footer{
 .portrait {
     width: 100px;
 }
-.button_3, .button_4{
+.stack_2_r, .stack_2_l{
   height: 155px;
 }
 
