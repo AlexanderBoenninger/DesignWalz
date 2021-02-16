@@ -6,7 +6,7 @@
           <div class="stack stack_1_layer yellow">
             <p class="big_brot button_text"> <?= $data->walzer_button()->ktr() ?></p>
           </div>
-          <div class="stack_2_l stack_sized click_react yellow">
+          <div class="stack_2_l stack_sized hover_react yellow">
           </div>
         </a>
         <p class="smal_brot join_host"> <?= $data->host()->ktr() ?></p>
@@ -14,7 +14,7 @@
           <div class="stack stack_1_layer yellow">
             <p class="big_brot button_text"> <?= $data->host_button()->ktr() ?></p>
           </div>
-          <div class="stack_2_r stack_sized click_react yellow">
+          <div class="stack_2_r stack_sized hover_react yellow">
           </div>
         </a>
       </div>
