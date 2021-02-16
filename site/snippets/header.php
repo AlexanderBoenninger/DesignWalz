@@ -18,9 +18,9 @@
     <header class="header shadow ">
       <a class="branding" href="<?= $site->url() ?>"><h1>Design Walz</h1></a>
       <nav id="menu" class="menu">
-        <?php foreach ($site->children()->listed()->offset(4) as $item): ?>
+        <!-- <?php foreach ($site->children()->listed()->offset(4) as $item): ?>
             <a href=" #<?= $item->title() ?>" class="menu_link"> <?= $item->title() ?>  </a>
-        <?php endforeach ?>
+        <?php endforeach ?> -->
         <div id="mobile_menu_back">
         </div>
 

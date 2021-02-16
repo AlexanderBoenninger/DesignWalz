@@ -58,10 +58,5 @@
            <a class="normal_brot link" href="mailto:<?= $data->veronika_mail()->ktr() ?>"><?= $data->veronika_mail()->ktr() ?></a>
          </div>
         </div>
-
       </div>
-
-
-
-
 </section>
