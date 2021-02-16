@@ -1,5 +1,5 @@
-title: Opener
-----
+Title: Home
+
 opener_pic_1: content/1_opener/Sticker_1.svg
 ----
 opener_pic_2: content/1_opener/Sticker_2.svg

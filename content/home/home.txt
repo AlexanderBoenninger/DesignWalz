@@ -1,1 +1,34 @@
 Title: Home
+----
+opener_pic_1: content/1_home/Sticker_6.svg
+----
+opener_pic_2: content/1_home/Sticker_2.svg
+----
+opener_pic_3: content/1_home/Sticker_3.svg
+----
+opener_pic_4: content/1_home/Sticker_4.svg
+----
+opener_pic_5: content/1_home/Sticker_5.svg
+----
+
+
+mobile_opener_pic_1: content/1_home/mobile_Sticker_1.svg
+----
+mobile_opener_pic_2: content/1_home/mobile_Sticker_2.svg
+----
+mobile_opener_pic_3: content/1_home/mobile_Sticker_3.svg
+----
+mobile_opener_pic_4: content/1_home/mobile_Sticker_4.svg
+----
+mobile_opener_pic_5: content/1_home/mobile_Sticker_5.svg
+----
+
+secTitle: Project
+
+----
+text_1: Design Walz is a way of continuing to share knowledge while traveling around the country, continent or world.
+----
+text_2: By working in several agencies and companies you are able to build a sustainable network with meaningful contacts. Going on a Walz means expanding your comfort zone while focussing on learning and your creativity. A Walz is based on trust and respect between all participants.
+----
+text_3: We adapted the idea of the Walz from an old craftsman tradition and want to implement it for Designers. One of the obstacles is the missing contact to a network that could support people on their Walz. So we want to build that community.
+----

@@ -17,25 +17,7 @@
 
     <header class="header shadow ">
       <a class="branding" href="<?= $site->url() ?>"><h1>Design Walz</h1></a>
-      <nav id="menu" class="menu">
-        <!-- <?php foreach ($site->children()->listed()->offset(4) as $item): ?>
-            <a href=" #<?= $item->title() ?>" class="menu_link"> <?= $item->title() ?>  </a>
-        <?php endforeach ?> -->
-        <div id="mobile_menu_back">
-        </div>
-
-      <!-- <div class="languages_cont"> -->
-        <!-- <div class="languages"> -->
-        <!-- <?php foreach($kirby->languages() as $language): ?>
-          <span <?php e($kirby->language() == $language, 'class="buttonActive langActive"') ?>>
-          <a class="tag pointer" href="<?= $page->url($language->code()) ?>">
-            <?= html($language->name()) ?>
-          </a>
-        </span>
-        <?php endforeach ?> -->
-        <!-- </div> -->
-        <!-- </div> -->
-      </nav>
+      <?php snippet('menu') ?>
       <div class="mobile_menu_action">
         <div class="closer">
           <hr>
