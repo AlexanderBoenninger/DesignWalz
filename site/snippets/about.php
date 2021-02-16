@@ -7,10 +7,16 @@
 
         <div class="two_col col_1_team space_bottom_20p">
          <div class="button about_team_1">
-           <div class="button_2 white">
+           <div class="stack stack_1_layer white">
              <img class="portrait" src="<?= $data->alex_pic()->url() ?>" alt="">
            </div>
-           <div class="button_4 white">
+           <div class="stack_2_r stack_sized white">
+             <!-- <div class="stack_2_r substacks stack_5_r white">
+              <div class="stack_2_r substacks substack_5_r white">
+                <div class="stack_2_r substacks substack_5_r white">
+                </div>
+              </div>
+            </div> -->
            </div>
          </div>
          <p class="mittel_brot team_zitat_1"> <?= $data->alex_zitat()->ktr() ?></p>
@@ -28,10 +34,16 @@
 
          <div class="two_col col_2_team space_bottom_20p">
          <div class="button about_team_2">
-           <div class="button_2 white">
+           <div class="stack stack_1_layer white">
              <img class="portrait" src="<?= $data->veronika_pic()->url() ?>" alt="">
            </div>
-           <div class="button_3 white">
+           <div class="stack_2_l stack_sized white">
+             <!-- <div class="stack_2_l substacks stack_5_l white">
+              <div class="stack_2_l substacks substack_5_l white">
+                <div class="stack_2_l substacks substack_5_l white">
+                </div>
+              </div>
+            </div> -->
            </div>
          </div>
          <p class="mittel_brot team_zitat_2"> <?= $data->veronika_zitat()->ktr() ?></p>

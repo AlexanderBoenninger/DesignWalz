@@ -1,11 +1,21 @@
 $(document).ready(function() {
   const mq = window.matchMedia("(max-width:630px)");
   const mq_2 = window.matchMedia("(max-width:920px)");
-  var h = $(".button_size").height();
 
-   console.log(h + "height");
-  $('.button_sized').css("height", h , "px");
 
+let hArr = document.querySelectorAll(".stack");
+let h2Arr = document.querySelectorAll(".stack_sized");
+
+$( window ).on( "load", function() {
+
+  for(i=0; i< hArr.length; i++){
+    let h = hArr[i].clientHeight
+    h2Arr[i].style.height = h + 'px';
+    $(".substacks").css("height", "inherit")
+  };
+
+
+});
     $(".burger").click( function(){
         console.log("click");
         $("#menu").css("display","block");
@@ -25,10 +35,19 @@ $(document).ready(function() {
         $(".closer").removeClass("show");
         $(".burger").removeClass("hide");
       });
+
+    // $(".click_ani").hover(function(){
+    //   console.log("hover");
+    //   $(this).find(".hover_react").toggleClass("hover_stack_button");
+    //
+    // });
+
     $(".click_ani").hover(function(){
-      console.log("hover");
-      $(".click_react")
+      $(this).find(".stack_2_l").toggleClass("click_stack_2_r");
+      $(this).find(".stack_2_r").toggleClass("click_stack_2_l");
     });
+
+
     	var rellax = new Rellax('.rellax');
 
 

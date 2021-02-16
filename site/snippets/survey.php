@@ -4,20 +4,19 @@
         <p class="big_brot survey_text"> <?= $data->about()->ktr() ?></p>
 
         <a class="button click_ani join_walzer_button" href="https://docs.google.com/forms/d/e/1FAIpQLSclxYYWFqV0--KrAeWyeT9e-3Yk7pd9VJ97nT8I5PbiKxS6DA/viewform" target="_blank" >
-
-          <div class="button_2 button_size blue_light">
-            <p class="big_brot"> <?= $data->walzer_button()->ktr() ?></p>
+          <div class="stack stack_1_layer blue_light">
+            <p class="big_brot button_text"> <?= $data->walzer_button()->ktr() ?></p>
           </div>
-          <div class="button_0 button_sized click_react">
+          <div class="stack_2_l stack_sized hover_react">
           </div>
         </a>
         <!-- <p class="smal_brot join_host"> <?= $data->host()->ktr() ?></p> -->
         <a class="button click_ani join_host_button" href="https://docs.google.com/forms/d/e/1FAIpQLSc-jFUuuqA3I1dttIBq0rL-CDzUyPZkD-vkmS_s-QBw4brdJA/viewform" target="_blank" >
 
-            <div class="button_2 button_size blue_light">
-              <p class="big_brot"> <?= $data->host_button()->ktr() ?></p>
+            <div class="stack stack_1_layer blue_light">
+              <p class="big_brot button_text"> <?= $data->host_button()->ktr() ?></p>
             </div>
-            <div class="button_1 button_sized click_react ">
+            <div class="stack_2_r stack_sized hover_react ">
           </div>
         </a>
       </div>
