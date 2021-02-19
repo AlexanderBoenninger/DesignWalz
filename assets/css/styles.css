@@ -6,6 +6,7 @@ body {
 }
 
 :root {
+  /* __________Color___________ */
   --blue: #27348B;
   --blue_light: #C6E7FB;
   --yellow: #FFDE00;
@@ -15,6 +16,10 @@ body {
   --black_text: #000;
   --white: white;
   --transparent: rgba(0, 0, 0, 0);
+
+/* __________Border___________ */
+  --underline: 2px;
+  --line_thick: 3px;
 }
 
 .yellow {
@@ -39,7 +44,7 @@ body {
 
 *, html {
   font-family: "TTHoves-Medium", Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 1em;
   font-feature-settings: 'ss03', 'ss04';
 }
 
@@ -105,7 +110,7 @@ a {
 }
 
 .link {
-  border-bottom: 2px solid var(--orange);
+  border-bottom: var(--underline) solid var(--orange);
 }
 
 #menu .menu_link {
@@ -225,7 +230,7 @@ hr {
   line-height: 0;
   clear: both;
   border: none;
-  border-top: 3px solid var(--black);
+  border-top: var(--line_thick) solid var(--black);
 }
 
 hr:first-of-type {
@@ -273,7 +278,7 @@ hr:first-of-type {
 }
 
 .stack_1_layer, .stack_2_r, .stack_2_l {
-  border: 3px solid var(--black);
+  border: var(--line_thick) solid var(--black);
   width: 100%
 }
 
@@ -466,6 +471,17 @@ footer {
 
 .legal_container h2, .legal_container p, .legal_container h4, .legal_container ul {
   grid-column: 2/-4;
+}
+
+@media only screen and (min-width:1260px) {
+  :root {
+    --line_thick: 0.25vw;
+  }
+
+*, html{
+      font-size: 1.2vw;
+  }
+
 }
 
 @media only screen and (max-width:870px) {

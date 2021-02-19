@@ -1,0 +1,15 @@
+Title: contact
+
+----
+
+secTitle: contact
+
+----
+
+email_info: (email: bastian@getkirby.com text: Send me an email class: email)
+
+----
+
+address: c.o U.ZWO – Bürogemeischaft 
+Ungerstr.2
+04318 Leipzig

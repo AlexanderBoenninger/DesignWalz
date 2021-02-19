@@ -1,7 +1,10 @@
   </div>
-
-
   <footer class="footer">
+<div class="footer_col footer_contact">
+  <h2 class="white">contact</h2>
+    <a href="<?= $contact->email_info()->ktr()?>"></a>
+</div>
+
 
 <div class="legal_nav white_typo space_top_20p space_bottom_40p">
 
