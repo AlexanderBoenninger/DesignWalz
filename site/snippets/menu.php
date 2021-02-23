@@ -1,5 +1,5 @@
 <nav id="menu" class="menu">
-  <?php foreach ($site->children()->listed()->offset(4) as $item):
+  <?php foreach ($site->children()->listed()->offset(6) as $item):
     ($item->ext_url() != '') ? $href = $item->ext_url()->html().'"target="_blank'
                        : $href = $item->url();
                         ?>

@@ -29,15 +29,18 @@ body {
 .blue_light {
   background: var(--blue_light);
 }
-
-.white {
+.black_back{
+  background: var(--black);
+}
+.white_back {
   background: var(--white);
 }
-
 .white_typo {
   color: var(--white);
 }
-
+.white_border {
+  border-color: var(--white)!important;
+}
 .green {
   background: var(--green);
 }
@@ -81,17 +84,21 @@ h3 {
 p {
   margin: 0px;
 }
+.headline_center{
+  text-align: center;
+  grid-column: 3 /-3
+}
 
 .big_brot {
   font-size: 2.5em;
 }
 
 .mittel_brot {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 .normal_brot {
-  font-size: 1em;
+  font-size: 1.25em;
 }
 
 .badass_small {
@@ -101,16 +108,46 @@ p {
 .einzug {
   text-indent: 20px;
 }
-
+.center{
+  text-align: center;
+}
 span {}
 
 a {
   text-decoration: none;
   color: inherit;
 }
+ul{
+  list-style: none;
+  padding-left: 0px;
+}
 
+ul li::before {
+  content: "■";
+  color: var(--orange);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.3em;
+}
+
+li{
+  margin-bottom: 10px;
+}
 .link {
   border-bottom: var(--underline) solid var(--orange);
+}
+.link:hover {
+border-bottom: var(--underline) dashed var(--orange);
+border-bottom-width: 2.5px;
+}
+
+.link_white {
+  border-bottom: var(--underline) solid var(--white);
+}
+.link_white:hover {
+  border-bottom: var(--underline) dashed var(--white);
+  border-bottom-width: 2.5px;
 }
 
 #menu .menu_link {
@@ -137,7 +174,9 @@ em {
 .space_top_20p {
   margin-top: 20px;
 }
-
+.space_left_20p {
+  margin-left: 20px;
+}
 .space_top_40p {
   margin-top: 40px;
 }
@@ -165,10 +204,13 @@ header,
 #join,
 #about,
 #survey,
+#double_text_head,
+#double_benefits,
 .team_container,
 #support,
 footer,
 .legal_nav,
+.footer_container,
 .two_col,
 .legal_container {
   display: grid;
@@ -176,7 +218,9 @@ footer,
   grid-template-columns: 0px repeat(12, 1fr) 0px;
   grid-gap: 20px;
 }
-
+#support-m, #singel_text_head{
+display: none;
+}
 .team_container, .legal_nav, .opener_pic {
   grid-template-columns: repeat(10, 1fr);
 }
@@ -188,7 +232,7 @@ footer,
 
 /* __________________________________________________________________ */
 .branding {
-  grid-column: 2 / span 4;
+  grid-column: 2 / span 5;
   grid-row: 1;
 }
 
@@ -320,6 +364,7 @@ hr:first-of-type {
 
 .button_text {
   padding: 0px 20px;
+  text-align: center;
 }
 .hover_react{
   background: var(--transparent);
@@ -336,10 +381,30 @@ hr:first-of-type {
     var(--transparent) 2%, var(--black) 2%,
     var(--black) 3%, var(--transparent) 3%);
 }
+.sm_buttons a{
+  display: block;
+  float: left;
+}
+/* __________Double_pages___________ */
+.double_page_desk{
+position: absolute;
+display: flex;
+width: 100%;
+z-index: -20;
+height: 100%;
+top: 0px;
+}
 
-
-
-/* __________________________________________________________________ */
+.double_page_host{
+  flex-grow: 2;
+}
+.for_walzer{
+  grid-column: 3 /span 4;
+}
+.for_host{
+  grid-column: 9 /span 4;
+}
+/* ______________________________________Opener____________________________ */
 .mobile_opener_pic {
   display: none;
   grid-column: 2/-2;
@@ -361,8 +426,9 @@ hr:first-of-type {
 .project_content, .about_content {
   grid-column: 2/-4;
 }
+/* ________________________join__________________________________________ */
 
-#join {
+.join {
   background-color: var(--yellow);
 }
 
@@ -381,15 +447,15 @@ hr:first-of-type {
   grid-column: 7/span 4;
 }
 
-.join_host_button, .join_walzer_button {
-  text-align: center;
-}
 
 .join_host, .join_walzer {
   grid-row: 1;
 }
+/* –––––page–––––– */
 
-#survey {
+/* ________________________survey__________________________________________ */
+
+.survey {
   background-color: var(--blue_light);
 }
 
@@ -427,14 +493,14 @@ hr:first-of-type {
   width: 200px;
   height: 100%;
   margin-right: -6px;
-  margin-bottom: -5px;
+  margin-bottom: -7px;
 }
 
 .team_zitat_1, .team_zitat_2 {
   grid-column: 1/-1;
 }
-
-#support {
+/* ________________________support__________________________________________ */
+.support {
   background-color: var(--green);
 }
 
@@ -445,27 +511,45 @@ hr:first-of-type {
   grid-gap: 20px;
 }
 
-.white_border {
-  border-color: var(--white);
-}
+
+
+
+
+
+/* ________________________footer__________________________________________ */
 
 footer {
   background-color: var(--black);
 }
-
 .legal_nav {
   grid-column: 2/-4;
 }
+.footer_container{
+  grid-template-columns: repeat(12, 1fr);
+  grid-column: 2/-2;
+}
+/* .footer_news, .footer_socialmedia, .footer_contact{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column:1 /-1;
+}
+.footer_news h2, .footer_socialmedia h2, .footer_contact h2{
+  grid-column:1 /-1;
+} */
 
-.footer_link_1 {
-  grid-column: 1/span 3;
+
+
+.footer_col_1 {
+  grid-column: 1/span 4;
+}
+.footer_col_2 {
+  grid-column: 5/span 4;
+}
+.footer_col_3 {
+  grid-column: 9/span 4;
 }
 
-.footer_link_2 {
-  grid-column: 4/span 3;
-}
-
-.copyreight {
+.copyright {
   grid-column: -4/span 2;
 }
 
@@ -473,6 +557,13 @@ footer {
   grid-column: 2/-4;
 }
 
+.sm_buttons a, .newsletter_button {
+  display: block;
+  float: left;
+}
+.newsletter_signin{
+
+}
 @media only screen and (min-width:1260px) {
   :root {
     --line_thick: 0.25vw;
@@ -485,9 +576,9 @@ footer {
 }
 
 @media only screen and (max-width:870px) {
-  .branding {
-    grid-column: 2 / span 5;
-  }
+  ul{
+      padding-left: 1.8em;
+    }
 
   .big_brot, h1, h2, #menu .menu_link {
     font-size: 1.6em;
@@ -499,6 +590,13 @@ footer {
 
   .stack_2_r, .stack_2_l {
     height: inherit;
+  }
+
+  .for_walzer{
+    grid-column: 3 /span 5;
+  }
+  .for_host{
+    grid-column: 8 /span 5;
   }
 
   .join_content {
@@ -524,10 +622,20 @@ footer {
 }
 
 @media only screen and (max-width:510px) {
+
+  #support{
+    display: none;
+  }
+  #support-m{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 0px repeat(6, 1fr) 0px;
+    grid-gap: 20px;
+  }
+
   .branding {
     grid-column: 2 / -3;
   }
-
   .menu_link {
     /* display: none; */
     grid-row: 2;
@@ -608,7 +716,7 @@ footer {
     grid-column: 1/-1;
   }
 
-  .team_container, .legal_nav, .opener_pic, .two_col {
+  .team_container, .legal_nav, .footer_container, .opener_pic, .two_col {
     grid-template-columns: repeat(12, 1fr);
   }
 

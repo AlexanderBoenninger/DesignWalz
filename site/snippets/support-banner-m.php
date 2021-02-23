@@ -1,4 +1,4 @@
-<section id="support" class="support">
+<section id="support-m" class="support">
   <div class="container support_content content space_top_80p space_bottom_80p">
     <p class="smal_brot join_walzer white_typo"> <?= $support->support_text()->ktr() ?></p>
     <a class="button click_ani join_walzer_button white_typo" href="mailto:<?= str::encode($support->email_support()) ?><?= $support->email_support_subject()?><?= $support->email_support_body()?>">

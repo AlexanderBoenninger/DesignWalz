@@ -6,7 +6,7 @@ $(document).ready(function() {
 let hArr = document.querySelectorAll(".stack");
 let h2Arr = document.querySelectorAll(".stack_sized");
 
-$( window ).on( "load", function() {
+$( window ).on( "load", function sizeing() {
 
   for(i=0; i< hArr.length; i++){
     let h = hArr[i].clientHeight
@@ -16,6 +16,10 @@ $( window ).on( "load", function() {
 
 
 });
+$('body').on('change', 'h', sizeing()
+  // Action goes here.
+);
+
     $(".burger").click( function(){
         console.log("click");
         $("#menu").css("display","block");
@@ -46,7 +50,6 @@ $( window ).on( "load", function() {
       $(this).find(".stack_2_l").toggleClass("click_stack_2_r");
       $(this).find(".stack_2_r").toggleClass("click_stack_2_l");
     });
-
 
     	var rellax = new Rellax('.rellax');
 

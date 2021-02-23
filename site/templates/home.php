@@ -25,7 +25,7 @@
      <p class="big_brot einzug"> <?= $page->text_3()->ktr() ?></p>
   </div>
 </section>
-<?php snippet('join') ?>
+<?php snippet('join-banner') ?>
 <?php snippet('survey-banner') ?>
 <?php snippet('about') ?>
 <?php snippet('support-banner') ?>
