@@ -1,7 +1,14 @@
 <section id="opener" class="opener">
-
-  <div class="trailer_container half_grid_l">
-    <div class="trailer"  style="background-image: url(<?= $data->img()->html() ?>);" >
+<div class="full_grid ">
+  <div class="half_grid_l">
+    <div class="trailer_container ">
+      <video id="" class="vid" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+        <source src="<?= $data->trailer() ?>.webm" type="video/webm">
+        <source src="<?= $data->trailer() ?>.mp4" type="video/mp4">
+        <source src="<?= $data->trailer() ?>.ogv" type="video/ogg ogv">
+          Video not supported </video>
+      <!-- <div class="artist_trailer"  style="background-image: url(<?= $data->img()->html() ?>);" >
+    </div> -->
     </div>
 
     <div class="controler play space_buttom_20p">
@@ -28,19 +35,21 @@
       </svg>
     </div>
   </div>
-<div class="about_container">
-  <div class="about_section half_grid_r">
-     <p class="about big-brot"><?= $data->about()->ktr() ?></p>
-     <div class="about_button_row">
-        <button type="button" name="button">
-          <?= $data->contact()->ktr() ?>
-        </button>
-        <button type="button" name="button">
-          <p class="small–brot_20">share</p>
-        </button>
-     </div>
-     <div class="pfeil space_buttom_20p">
-       <svg width="69px" height="117px" viewBox="0 0 69 117" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+
+  <div class="half_grid_r">
+     <div class="about_section half_grid_r ">
+       <p class="about big-brot"><?= $data->about()->ktr() ?></p>
+       <div class="about_button_row">
+          <button type="button" name="button">
+            <?= $data->contact()->ktr() ?>
+          </button>
+          <button type="button" name="button">
+            <p class="small–brot_20">share</p>
+          </button>
+       </div>
+       <div class="pfeil space_buttom_20p">
+         <svg width="69px" height="117px" viewBox="0 0 69 117" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
            <title>Group 5 Copy</title>
            <defs>
                <filter id="filter-1">
@@ -62,8 +71,10 @@
                    </g>
                </g>
            </g>
-       </svg>
+         </svg>
+       </div>
      </div>
-  </div>
+
+ </div>
 </div>
 </section>

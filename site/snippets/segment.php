@@ -2,15 +2,15 @@
 
   <div class="full_grid ">
     <div class="artist_trailer_container ">
-
-    <video id="" class="vid" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-   <source src="<?= $data->trailer() ?>.webm" type="video/webm">
-   <source src="<?= $data->trailer() ?>.mp4" type="video/mp4">
-   <source src="<?= $data->trailer() ?>.ogv" type="video/ogg ogv">
-Video not supported </video>
+      <video id="" class="vid" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+        <source src="<?= $data->trailer() ?>.webm" type="video/webm">
+        <source src="<?= $data->trailer() ?>.mp4" type="video/mp4">
+        <source src="<?= $data->trailer() ?>.ogv" type="video/ogg ogv">
+          Video not supported </video>
       <!-- <div class="artist_trailer"  style="background-image: url(<?= $data->img()->html() ?>);" >
     </div> -->
   </div>
+
   <div class="controler play space_buttom_20p">
     <svg width="52px" height="58px" viewBox="0 0 52 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>play</title>
