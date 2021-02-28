@@ -1,24 +1,8 @@
-title: Opener
-----
-opener_pic_1: content/1_opener/Sticker_1.svg
-----
-opener_pic_2: content/1_opener/Sticker_2.svg
-----
-opener_pic_3: content/1_opener/Sticker_3.svg
-----
-opener_pic_4: content/1_opener/Sticker_4.svg
-----
-opener_pic_5: content/1_opener/Sticker_5.svg
-----
 
-
-mobile_opener_pic_1: content/1_opener/mobile_Sticker_1.svg
 ----
-mobile_opener_pic_2: content/1_opener/mobile_Sticker_2.svg
+img: content/1_opener/Bild.png
 ----
-mobile_opener_pic_3: content/1_opener/mobile_Sticker_3.svg
+about: Gado-gado is widely sold in almost every part of Indonesia, with each area having its own modifications. It is thought to have originally been a Sundanese dish, as it is most prevalent in Western parts of Java, which includes Jakarta, Banten, and West Java provinces.
 ----
-mobile_opener_pic_4: content/1_opener/mobile_Sticker_4.svg
-----
-mobile_opener_pic_5: content/1_opener/mobile_Sticker_5.svg
+contact: (email: bastian@getkirby.com text: contact title: Contact me class: small–brot_20)
 ----

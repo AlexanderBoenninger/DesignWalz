@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="69px" height="117px" viewBox="0 0 69 117" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 5 Copy</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-2" points="0.273856068 0.490384416 45.9245393 0.490384416 45.9245393 66.6237972 0.273856068 66.6237972"></polygon>
+    </defs>
+    <g id="PAGE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-5-Copy" transform="translate(-1407.000000, -714.000000)" filter="url(#filter-1)">
+            <g transform="translate(1441.720030, 772.287030) rotate(-270.000000) translate(-1441.720030, -772.287030) translate(1383.720030, 738.287030)">
+                <polygon id="Fill-1" fill="#000000" points="0 36.3223011 108.00465 36.3223011 108.00465 31.3611292 0 31.3611292"></polygon>
+                <g id="Group-4" transform="translate(69.722903, 0.284082)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="Clip-3"></g>
+                    <path d="M29.4769065,33.5534497 C14.5399367,29.52579 0.441965733,19.6235884 0.273856068,0.490074536 L5.47673401,0.490074536 C6.31573294,18.9519245 23.6023646,31.5392325 45.9245393,31.0364529 L45.9245393,36.0781935 C23.6023646,35.5746392 6.31573294,48.1619472 5.47673401,66.6237972 L0.273856068,66.6237972 C0.441965733,47.491058 14.5399367,37.5888564 29.4769065,33.5611967 L29.4769065,33.5534497 Z" id="Fill-2" fill="#000000" mask="url(#mask-3)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

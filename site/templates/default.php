@@ -1,1 +1,1 @@
-<?php go('error') ?>
+<h1><?= $page->title() ?></h1>

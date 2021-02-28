@@ -1,0 +1,13 @@
+
+name: Ivo Schneidererererer
+----
+artist_Id: ivo_schneider
+----
+trailer: content/2_segment/IMG_1826
+----
+img: content/2_segment/Bild.png
+----
+contact: (email: bastian@getkirby.com text: contact title: Contact me class: small–brot_20)
+----
+website: (link: http://www.veronikakaiping.de text: website target: _blank class: small–brot_20)
+----
